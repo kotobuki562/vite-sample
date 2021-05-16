@@ -1,18 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <!-- <img alt="Vue logo" src="./assets/logo.png" />
+  <Button btnText="お歳暮" /> -->
+  <TrackData />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { defineComponent } from "vue";
+import Button from "./components/Button.vue";
+import TrackData from "./components/TrackData.vue";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-})
+    Button,
+    TrackData,
+  },
+});
 </script>
 
 <style>
